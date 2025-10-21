@@ -48,14 +48,13 @@ public class Main {
             }
         }
 
-        byte sitPlacesSold = 50;
-        byte stayPlacesSold = 30;
-        int sitPlacesFree = 60 - sitPlacesSold;
-        int stayPlacesFree = 102 - 60 - stayPlacesSold;
-        if (sitPlacesFree == 0 && stayPlacesFree == 0) {
-            System.out.println("Вагон полон");
+        byte numPassenger = 102;
+        if (numPassenger < 60) {
+            System.out.println("В вагоне есть сидячие места");
+        } else if (numPassenger < 102) {
+            System.out.println("В вагоне есть стоячие места");
         } else {
-            System.out.println("В вагоне свободно " + sitPlacesFree + " сидячих мест и " + stayPlacesFree + " стоячих мест");
+            System.out.println("вагон полон");
         }
 
         int one = 100;
