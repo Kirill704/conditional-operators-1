@@ -41,7 +41,7 @@ public class Main {
         if (ageAttract < 5) {
             System.out.println("Если возраст ребенка равен " + ageAttract + ", то ему нельзя кататься на аттракционе");
         } else {
-            if (ageAttract >= 5 && ageAttract < 14) {
+            if (ageAttract >= 5 && ageAttract <= 14) {
                 System.out.println("Если возраст ребенка равен " + ageAttract + ", то ему можно кататься на аттракционе в сопровождении взрослого");
             } else {
                 System.out.println("Если возраст ребенка равен " + ageAttract + ", то ему можно кататься на аттракционе без сопровождения взрослого");
